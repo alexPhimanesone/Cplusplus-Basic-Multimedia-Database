@@ -1,0 +1,52 @@
+REPONSES TP
+
+
+
+	I4
+
+Comment appelle-t-on ce type de méthode et comment faut-il les déclarer ?
+- methode abstraite
+- on les declare dans la classe de base avec virtual
+
+Si vous avez fait ce qui précède comme demandé, il ne sera plus possible d'instancer des objets de la classe de base. Pourquoi ?
+- Comme la classe de base contient une methode abstraite, elle est abstraite, donc elle ne peut pas etre instanciee
+
+
+	I5
+
+Quelle est la propriété caractéristique de l'orienté objet qui permet de faire cela ?
+- le polymorphisme
+
+Qu'est-il spécifiquement nécessaire de faire dans le cas du C++ ?
+- declarer la methode de la classe de base virtual
+
+Quel est le type des éléments du tableau : le tableau doit-il contenir des objets ou des pointeurs vers ces objets ? Pourquoi ? Comparer à Java.
+- chaque element du tableau est un pointeur vers une instance de la classe Multimedia
+- utiliser des pointeurs vers les objets plutot que les objets eux-memes permet d'utiliser le polymorphisme et les liaisons dynamiques
+- en Java, on travaille directement avec les objets et on peut utiliser le polymorphisme avec des objets sans pointeurs
+
+
+	I7
+
+Parmi les classes précédemment écrites quelles sont celles qu'il faut modifier afin qu'il n'y ait pas de fuite mémoire quand on détruit les objets ?
+- la classe Film
+
+La copie d'objet peut également poser problème quand ils ont des variables d'instance qui sont des pointeurs. Quel est le problème et quelles sont les solutions ?
+- le nouvel objet a le même pointeur que l'objet copié, les deux pointeurs pointent sur le même objet, violation du principe d'encapsulation
+- on peut y remédier en effectuant une deep copy plutôt qu'une shallow copy (via une redéfinition de l'opérateur de copie)
+
+
+	I8
+
+On rappelle aussi que la liste d'objets doit en fait être une liste de pointeurs d'objets. Pourquoi ? Comparer à Java.
+- on utilise des pointeurs pour pouvoir implémenter le polymorphisme
+- en Java, on n'a pas besoin d'utiliser des pointeurs
+
+
+	I10
+
+Comment peut-on interdire les créations avec new, afin que seule la classe Tables puisse créer de nouveaux objets?
+- on peut déclarer tous les constructeurs d'objets protected et donner accès à Tables à ces méthodes protected via le mot-clé friend
+
+
+	II1

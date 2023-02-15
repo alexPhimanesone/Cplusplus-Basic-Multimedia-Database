@@ -1,0 +1,9 @@
+NOTES TP
+
+
+pour vérifier que t'as bien géré les smart pointers,
+utiliser valgrind (outil sur linux)
+-> valgrind ./myprog
+tu dois obtenir 0 bytes
+si t'obtiens pas 0 bytes,
+utiliser valgrind --leak-check=full ./myprog
