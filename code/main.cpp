@@ -10,6 +10,7 @@
 #include <string>
 #include <iostream>
 #include <sstream>
+#include <array>
 #include "tcpserver.h"
 #include "Multimedia.h"
 #include "Video.h"
@@ -179,7 +180,7 @@ int main(int argc, const char* argv[])
             std::cout << "request: " << request << std::endl;
 
             // Split the request into words
-            stringstream request_stream;
+            std::stringstream request_stream;
             request_stream << request;
             array<string, 3> words;
             request_stream >> words[0];

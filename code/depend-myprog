@@ -1,9 +1,0 @@
--Wall
--g
--MM
-Multimedia.cpp
-main.cpp
-Film.cpp
-Tables.cpp
-ccsocket.cpp
-tcpserver.cpp
