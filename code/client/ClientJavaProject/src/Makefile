@@ -3,7 +3,7 @@ JC        = $(MY_PATH)javac
 JVM       = $(MY_PATH)java 
 JFLAGS    = -g
 
-CLASSES = Client.java
+CLASSES = Client.java MainFrame.java
 MAIN    = Client
 
 .SUFFIXES: .java .class

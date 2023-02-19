@@ -50,3 +50,10 @@ Comment peut-on interdire les créations avec new, afin que seule la classe Tabl
 
 
 	II1
+
+Cliquez plusieurs fois sur les deux premiers bouton, retaillez la fenêtre. Que constate-t'on ?
+- on constate que l'affichage des phrases dépasse de la fenêtre
+
+
+	II2
+
