@@ -8,4 +8,4 @@ This is a simple client server program for handling multimedia objects like phot
 5. Display the characteristics of a multimedia object
 6. Play videos or movies and display photos
 
-The next step of this project is creating a Java Swing graphical interface, to enable the user to interact with the server in a more natural manner.
+There is a basic graphical interface that can be used to send requests to the server more naturally.
