@@ -22,8 +22,8 @@ class Video : public Multimedia
         void setLength(float _length) {length = _length;}
         void display(std::stringstream* ss) override
         {
-            *ss << "Name: " + name;
-            *ss << "Path: " + path;
+            *ss << "Name: " + name + ", ";
+            *ss << "Path: " + path + ", ";
             *ss << "Length: " << length;
         }
         void play() const {system(std::string("mpv --no-terminal " + path + " &").data());}

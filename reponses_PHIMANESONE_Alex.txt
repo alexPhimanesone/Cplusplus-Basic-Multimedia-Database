@@ -1,6 +1,8 @@
 REPONSES TP
 
-
+Les questions 1 à 11 de la partie C++ ont été traités,
+notamment la question additionnelle de la question 10 (suppresion des tables).
+Toutes les questions de la partie Java Swing ont été traités.
 
 	I4
 
@@ -53,7 +55,4 @@ Comment peut-on interdire les créations avec new, afin que seule la classe Tabl
 
 Cliquez plusieurs fois sur les deux premiers bouton, retaillez la fenêtre. Que constate-t'on ?
 - on constate que l'affichage des phrases dépasse de la fenêtre
-
-
-	II2
 

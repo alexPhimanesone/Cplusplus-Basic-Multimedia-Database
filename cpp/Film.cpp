@@ -71,11 +71,12 @@ void Film::setChapters(int* _chapters, int _nbChapters)
 
 void Film::display(std::stringstream* ss)
 {
-    *ss << "Name: " + name;
-    *ss << "Path: " + path;
-    *ss << "Length: " << length;
+    *ss << "Name: " + name + ", ";
+    *ss << "Path: " + path + ", ";
+    *ss << "Length: " << length << ", ";
     for (int i = 0; i < nbChapters; i++)
     {
-        *ss << "Duree du chapitre " << i+1 << ": " << *(chapters + i); 
+        *ss << "Duree du chapitre " << i+1 << ": " << *(chapters + i);
+        if (i != nbChapters - 2) {*ss << ", ";}
     } 
 }

@@ -36,6 +36,6 @@ void Multimedia::setPath(std::string _path)
 
 void Multimedia::display(std::stringstream* ss)
 {
-    *ss << "Name: " + name;
+    *ss << "Name: " + name + ", ";
     *ss << "Path: " + path;
 }

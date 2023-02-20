@@ -26,9 +26,9 @@ class Photo : public Multimedia
         void setLongitude(float _longitude) {longitude = _longitude;}
         void display(std::stringstream* ss) override
         {
-            *ss << "Name: " + name;
-            *ss << "Path: " + path;
-            *ss << "Latitude: " << latitude;
+            *ss << "Name: " + name + ", ";
+            *ss << "Path: " + path + ", ";
+            *ss << "Latitude: " << latitude << ", ";
             *ss << "Longitude: " << longitude;
         }
         void play() const {system(std::string("imagej " + path + " &").data());}
